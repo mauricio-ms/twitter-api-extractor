@@ -1,0 +1,19 @@
+# MongoDB - Commands
+> ./c/Arquivos de Programas/MongoDB/Server/4.0/bin/mongo
+> use tweetsDb
+
+## Clear
+> db.tweets.remove("")
+
+## Find All
+> db.tweets.find().pretty()
+
+## Find Projecting fields text and _id
+> db.tweets.find( {}, { text: 1 } )
+
+## Count
+> db.tweets.count()
+
+## Count Distinct
+> db.tweets.distinct("id").length
+> db.oldCandidateTweets.distinct("id").length
